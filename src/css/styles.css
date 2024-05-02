@@ -1,25 +1,30 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-@import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
+ul {
+  list-style: none;
+}
 
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+body {
+  background-color: pink;
+}
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+.body-gallery {
+  background-color: rgb(255, 255, 128);
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+.gallery {
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0px 7px;
+  padding: 0;
+  justify-content: center;
+}
+
+.gallery-item {
+  width: calc(27.33% - 50px);
+  margin: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover {
+  transform: scale(1.1);
 }
