@@ -1,3 +1,7 @@
+import SimpleLightbox from "simplelightbox";
+import "simplelightbox/dist/simple-lightbox.min.css";
+console.log(simpleLightbox)
+
 const images = [
   {
     preview:
@@ -91,3 +95,7 @@ images.forEach(image => {
 })
 
 gallery.appendChild(fragment)
+
+document.addEventListener('DOMContentLoaded', function () {
+    const gallery = new SimpleLightbox('.gallery a');
+});
