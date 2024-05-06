@@ -98,7 +98,7 @@ images.forEach(image => {
 
 gallery.appendChild(fragment)
 
-const lightbox = new SimpleLightbox('ul.gallery' {
+const lightbox = new SimpleLightbox('ul.gallery', {
     captionsData: 'alt',
     captionsDelay: 250,
 })
